@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Questions for Yvette</title>
+  <style>
+    :root {
+      --border: #c9c9c9;
+      --header: #222;
+      --section-bg: #eeeeee;
+      --page-bg: #f7f7f7;
+      --text: #111;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      background: var(--page-bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+    }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 28px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    .instructions {
+      margin: 0 0 18px;
+      color: #444;
+      font-size: 14px;
+    }
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 0 0 18px;
+    }
+    button {
+      border: 1px solid #999;
+      background: #fff;
+      color: #111;
+      border-radius: 6px;
+      padding: 9px 12px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover { background: #f1f1f1; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      vertical-align: top;
+      padding: 10px;
+    }
+    th {
+      background: var(--header);
+      color: #fff;
+      text-align: left;
+      font-size: 15px;
+    }
+    th:first-child { width: 48%; }
+    th:last-child { width: 52%; }
+    tr.section td {
+      background: var(--section-bg);
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .question {
+      font-weight: 600;
+      white-space: pre-wrap;
+    }
+    textarea {
+      width: 100%;
+      min-height: 92px;
+      resize: vertical;
+      border: 1px solid #bdbdbd;
+      border-radius: 6px;
+      padding: 9px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    textarea:focus {
+      outline: 2px solid #777;
+      outline-offset: 1px;
+    }
+    .footer-note {
+      margin-top: 16px;
+      color: #555;
+      font-size: 13px;
+    }
+    @media print {
+      body { background: #fff; padding: 0; }
+      .page { box-shadow: none; border: none; border-radius: 0; padding: 0; }
+      .actions, .instructions .screen-only { display: none; }
+      textarea { border: none; min-height: 110px; overflow: visible; }
+      th { background: #222 !important; color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      tr.section td { background: #eee !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1>Questions for Yvette</h1>
+    <p class="instructions">Yvette can type her answers in the boxes below. Answers are saved in this browser automatically. <span class="screen-only">Use “Download Completed Copy” to save a filled-out HTML copy.</span></p>
+    <div class="actions">
+      <button type="button" onclick="window.print()">Print / Save as PDF</button>
+      <button type="button" onclick="downloadCompletedCopy()">Download Completed Copy</button>
+      <button type="button" onclick="clearAnswers()">Clear Answers</button>
+    </div>
+    <form id="yvette-form">
+      <table>
+        <thead>
+          <tr>
+            <th>Questions for Yvette</th>
+            <th>Yvette’s Answers / Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="section"><td colspan="2">Graduation / Cut-Off Events</td></tr>
+<tr><td class="question">1. Did Aubrey graduate? Do you remember Leah being happy about that?</td><td class="answer"><textarea id="answer-1" name="answer-1" aria-label="Answer for 1. Did Aubrey graduate? Do you remember Leah being happy about that?"></textarea></td></tr>
+<tr><td class="question">2. What happened after Aubrey’s graduation?</td><td class="answer"><textarea id="answer-2" name="answer-2" aria-label="Answer for 2. What happened after Aubrey’s graduation?"></textarea></td></tr>
+<tr><td class="question">3. What event preceded you getting cut off completely from the kids?</td><td class="answer"><textarea id="answer-3" name="answer-3" aria-label="Answer for 3. What event preceded you getting cut off completely from the kids?"></textarea></td></tr>
+<tr class="section"><td colspan="2">Goal: Show the things in Leah’s affidavit are not true since she did not share them with Yvette</td></tr>
+<tr><td class="question">4. You and Leah’s relationship fell out in October 2024?</td><td class="answer"><textarea id="answer-4" name="answer-4" aria-label="Answer for 4. You and Leah’s relationship fell out in October 2024?"></textarea></td></tr>
+<tr><td class="question">5. She filed this case in February 2024, did you know that?</td><td class="answer"><textarea id="answer-5" name="answer-5" aria-label="Answer for 5. She filed this case in February 2024, did you know that?"></textarea></td></tr>
+<tr><td class="question">6. At the time she filed the case, that was before the fallout, so you and Leah were close then?</td><td class="answer"><textarea id="answer-6" name="answer-6" aria-label="Answer for 6. At the time she filed the case, that was before the fallout, so you and Leah were close then?"></textarea></td></tr>
+<tr><td class="question">7. The kids were coming over then, regularly?</td><td class="answer"><textarea id="answer-7" name="answer-7" aria-label="Answer for 7. The kids were coming over then, regularly?"></textarea></td></tr>
+<tr><td class="question">8. If the kids were having behavioral issues, Leah would discuss that with you?</td><td class="answer"><textarea id="answer-8" name="answer-8" aria-label="Answer for 8. If the kids were having behavioral issues, Leah would discuss that with you?"></textarea></td></tr>
+<tr><td class="question">9. Like what?</td><td class="answer"><textarea id="answer-9" name="answer-9" aria-label="Answer for 9. Like what?"></textarea></td></tr>
+<tr><td class="question">10. If the kids were having medical issues, would Leah discuss that with you?</td><td class="answer"><textarea id="answer-10" name="answer-10" aria-label="Answer for 10. If the kids were having medical issues, would Leah discuss that with you?"></textarea></td></tr>
+<tr><td class="question">11. Like what?</td><td class="answer"><textarea id="answer-11" name="answer-11" aria-label="Answer for 11. Like what?"></textarea></td></tr>
+<tr><td class="question">12. If the kids were having psychological issues, would Leah discuss that with you?</td><td class="answer"><textarea id="answer-12" name="answer-12" aria-label="Answer for 12. If the kids were having psychological issues, would Leah discuss that with you?"></textarea></td></tr>
+<tr><td class="question">13. Like what?</td><td class="answer"><textarea id="answer-13" name="answer-13" aria-label="Answer for 13. Like what?"></textarea></td></tr>
+<tr><td class="question">14. If Leah was having, or was engaged in, litigation issues, she would discuss that with you?</td><td class="answer"><textarea id="answer-14" name="answer-14" aria-label="Answer for 14. If Leah was having, or was engaged in, litigation issues, she would discuss that with you?"></textarea></td></tr>
+<tr><td class="question">15. Like what?</td><td class="answer"><textarea id="answer-15" name="answer-15" aria-label="Answer for 15. Like what?"></textarea></td></tr>
+<tr><td class="question">16. Did she discuss with you when she first filed the case?</td><td class="answer"><textarea id="answer-16" name="answer-16" aria-label="Answer for 16. Did she discuss with you when she first filed the case?"></textarea></td></tr>
+<tr><td class="question">17. What did she say she was asking for?</td><td class="answer"><textarea id="answer-17" name="answer-17" aria-label="Answer for 17. What did she say she was asking for?"></textarea></td></tr>
+<tr><td class="question">18. Why did she say she was filing?</td><td class="answer"><textarea id="answer-18" name="answer-18" aria-label="Answer for 18. Why did she say she was filing?"></textarea></td></tr>
+<tr><td class="question">19. Has Matthew had any issues wetting the bed at any time?</td><td class="answer"><textarea id="answer-19" name="answer-19" aria-label="Answer for 19. Has Matthew had any issues wetting the bed at any time?"></textarea></td></tr>
+<tr><td class="question">20. When did the issues start?</td><td class="answer"><textarea id="answer-20" name="answer-20" aria-label="Answer for 20. When did the issues start?"></textarea></td></tr>
+<tr><td class="question">21. Are things like the things in Leah’s affidavit things Leah would talk to you about if they were true?</td><td class="answer"><textarea id="answer-21" name="answer-21" aria-label="Answer for 21. Are things like the things in Leah’s affidavit things Leah would talk to you about if they were true?"></textarea></td></tr>
+<tr class="section"><td colspan="2">Goal: Talk about Leah’s character and issue-management skills — Support to Leah</td></tr>
+<tr><td class="question">22. Let’s talk about Leah.</td><td class="answer"><textarea id="answer-22" name="answer-22" aria-label="Answer for 22. Let’s talk about Leah."></textarea></td></tr>
+<tr><td class="question">23. First, to get this out of the way, did you give Leah money for her air conditioner?</td><td class="answer"><textarea id="answer-23" name="answer-23" aria-label="Answer for 23. First, to get this out of the way, did you give Leah money for her air conditioner?"></textarea></td></tr>
+<tr><td class="question">24. How much?</td><td class="answer"><textarea id="answer-24" name="answer-24" aria-label="Answer for 24. How much?"></textarea></td></tr>
+<tr><td class="question">25. What were the terms, if any?</td><td class="answer"><textarea id="answer-25" name="answer-25" aria-label="Answer for 25. What were the terms, if any?"></textarea></td></tr>
+<tr><td class="question">26. Did you talk about those terms with Leah?</td><td class="answer"><textarea id="answer-26" name="answer-26" aria-label="Answer for 26. Did you talk about those terms with Leah?"></textarea></td></tr>
+<tr><td class="question">27. In your mind, were they clear?</td><td class="answer"><textarea id="answer-27" name="answer-27" aria-label="Answer for 27. In your mind, were they clear?"></textarea></td></tr>
+<tr><td class="question">28. If Leah were to take the position that it was not a loan because there was not a promissory note, how would you respond to that?</td><td class="answer"><textarea id="answer-28" name="answer-28" aria-label="Answer for 28. If Leah were to take the position that it was not a loan because there was not a promissory note, how would you respond to that?"></textarea></td></tr>
+<tr><td class="question">29. Were you present in the hallway when Oscar approached Leah’s fiancé?</td><td class="answer"><textarea id="answer-29" name="answer-29" aria-label="Answer for 29. Were you present in the hallway when Oscar approached Leah’s fiancé?"></textarea></td></tr>
+<tr><td class="question">30. Did you hear what Oscar said to him?</td><td class="answer"><textarea id="answer-30" name="answer-30" aria-label="Answer for 30. Did you hear what Oscar said to him?"></textarea></td></tr>
+<tr><td class="question">31. What did Oscar say?</td><td class="answer"><textarea id="answer-31" name="answer-31" aria-label="Answer for 31. What did Oscar say?"></textarea></td></tr>
+<tr><td class="question">32. What, if anything, did Leah respond with?</td><td class="answer"><textarea id="answer-32" name="answer-32" aria-label="Answer for 32. What, if anything, did Leah respond with?"></textarea></td></tr>
+<tr><td class="question">33. Have you loaned Leah any other money previously?</td><td class="answer"><textarea id="answer-33" name="answer-33" aria-label="Answer for 33. Have you loaned Leah any other money previously?"></textarea></td></tr>
+<tr><td class="question">34. How much?</td><td class="answer"><textarea id="answer-34" name="answer-34" aria-label="Answer for 34. How much?"></textarea></td></tr>
+<tr><td class="question">35. What for?</td><td class="answer"><textarea id="answer-35" name="answer-35" aria-label="Answer for 35. What for?"></textarea></td></tr>
+<tr><td class="question">36. What were the terms of that money?</td><td class="answer"><textarea id="answer-36" name="answer-36" aria-label="Answer for 36. What were the terms of that money?"></textarea></td></tr>
+<tr><td class="question">37. What did you understand that money was used for?</td><td class="answer"><textarea id="answer-37" name="answer-37" aria-label="Answer for 37. What did you understand that money was used for?"></textarea></td></tr>
+<tr><td class="question">38. Has Leah ever been able to provide long-term stability for herself?</td><td class="answer"><textarea id="answer-38" name="answer-38" aria-label="Answer for 38. Has Leah ever been able to provide long-term stability for herself?"></textarea></td></tr>
+<tr><td class="question">39. Has Leah ever been able to provide long-term stability for the kids?</td><td class="answer"><textarea id="answer-39" name="answer-39" aria-label="Answer for 39. Has Leah ever been able to provide long-term stability for the kids?"></textarea></td></tr>
+<tr class="section"><td colspan="2">Leah’s Mental Issues / Conflict Management</td></tr>
+<tr><td class="question">40. Are you aware of Leah’s mental issues, if any?</td><td class="answer"><textarea id="answer-40" name="answer-40" aria-label="Answer for 40. Are you aware of Leah’s mental issues, if any?"></textarea></td></tr>
+<tr><td class="question">41. Are you aware as to whether or not she stays on top of the treatment, if any?</td><td class="answer"><textarea id="answer-41" name="answer-41" aria-label="Answer for 41. Are you aware as to whether or not she stays on top of the treatment, if any?"></textarea></td></tr>
+<tr><td class="question">42. Can you tell from being with Leah when she is on medication versus not sufficiently medicated?</td><td class="answer"><textarea id="answer-42" name="answer-42" aria-label="Answer for 42. Can you tell from being with Leah when she is on medication versus not sufficiently medicated?"></textarea></td></tr>
+<tr><td class="question">43. What in general do you observe when her mental issues present themselves?</td><td class="answer"><textarea id="answer-43" name="answer-43" aria-label="Answer for 43. What in general do you observe when her mental issues present themselves?"></textarea></td></tr>
+<tr><td class="question">44. You and Leah had a falling out, had an issue, that led to y’all’s current status in your relationship, correct?</td><td class="answer"><textarea id="answer-44" name="answer-44" aria-label="Answer for 44. You and Leah had a falling out, had an issue, that led to y’all’s current status in your relationship, correct?"></textarea></td></tr>
+<tr><td class="question">45. Had you had issues with her previously?</td><td class="answer"><textarea id="answer-45" name="answer-45" aria-label="Answer for 45. Had you had issues with her previously?"></textarea></td></tr>
+<tr><td class="question">46. Are you aware of issues Leah has had with other people?</td><td class="answer"><textarea id="answer-46" name="answer-46" aria-label="Answer for 46. Are you aware of issues Leah has had with other people?"></textarea></td></tr>
+<tr><td class="question">47. Are you aware of issues Leah had with Matt?</td><td class="answer"><textarea id="answer-47" name="answer-47" aria-label="Answer for 47. Are you aware of issues Leah had with Matt?"></textarea></td></tr>
+<tr><td class="question">48. If you think of a continuum when it comes to being able to work out issues, on one end someone can usually sit down with the person and have a rational back and forth and empathize with the other person; on the other end, someone cannot even consider the fact that they might be wrong and will not try to see things from the other person’s perspective. Where does Leah fall on that continuum?</td><td class="answer"><textarea id="answer-48" name="answer-48" aria-label="Answer for 48. If you think of a continuum when it comes to being able to work out issues, on one end someone can usually sit down with the person and have a rational back and forth and empathize with the other person; on the other end, someone cannot even consider the fact that they might be wrong and will not try to see things from the other person’s perspective. Where does Leah fall on that continuum?"></textarea></td></tr>
+<tr><td class="question">49. Why do you say that? Can you give examples of people Leah had issues with and how that worked out?</td><td class="answer"><textarea id="answer-49" name="answer-49" aria-label="Answer for 49. Why do you say that? Can you give examples of people Leah had issues with and how that worked out?"></textarea></td></tr>
+<tr><td class="question">50. When Leah has issues with someone to the extent that, in her mind, they cannot be resolved, is she likely to let bygones be bygones and agree to disagree?</td><td class="answer"><textarea id="answer-50" name="answer-50" aria-label="Answer for 50. When Leah has issues with someone to the extent that, in her mind, they cannot be resolved, is she likely to let bygones be bygones and agree to disagree?"></textarea></td></tr>
+<tr><td class="question">51. If Leah feels a relationship with someone cannot be maintained, is she more likely to throw her hands up and walk away from that person, or dig in and go on the offensive?</td><td class="answer"><textarea id="answer-51" name="answer-51" aria-label="Answer for 51. If Leah feels a relationship with someone cannot be maintained, is she more likely to throw her hands up and walk away from that person, or dig in and go on the offensive?"></textarea></td></tr>
+<tr><td class="question">52. What do you know about Leah going on the offensive?</td><td class="answer"><textarea id="answer-52" name="answer-52" aria-label="Answer for 52. What do you know about Leah going on the offensive?"></textarea></td></tr>
+<tr><td class="question">53. Who is Lola?</td><td class="answer"><textarea id="answer-53" name="answer-53" aria-label="Answer for 53. Who is Lola?"></textarea></td></tr>
+<tr><td class="question">54. Who is Hoda?</td><td class="answer"><textarea id="answer-54" name="answer-54" aria-label="Answer for 54. Who is Hoda?"></textarea></td></tr>
+        </tbody>
+      </table>
+    </form>
+    <p class="footer-note">Note: This is a static HTML worksheet. It saves answers locally in the browser being used; it does not submit answers online.</p>
+  </main>
+  <script>
+    const STORAGE_KEY = 'yvette_questions_answers_v1';
+
+    function getAnswers() {
+      const answers = {};
+      document.querySelectorAll('textarea').forEach((box) => {
+        answers[box.id] = box.value;
+      });
+      return answers;
+    }
+
+    function saveAnswers() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(getAnswers()));
+    }
+
+    function loadAnswers() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+        document.querySelectorAll('textarea').forEach((box) => {
+          if (saved[box.id]) box.value = saved[box.id];
+        });
+      } catch (err) {
+        console.warn('Could not load saved answers.', err);
+      }
+    }
+
+    function clearAnswers() {
+      if (!confirm('Clear all answers on this page?')) return;
+      document.querySelectorAll('textarea').forEach((box) => box.value = '');
+      localStorage.removeItem(STORAGE_KEY);
+    }
+
+    function downloadCompletedCopy() {
+      saveAnswers();
+      const clone = document.documentElement.cloneNode(true);
+      const currentBoxes = document.querySelectorAll('textarea');
+      const clonedBoxes = clone.querySelectorAll('textarea');
+      clonedBoxes.forEach((box, i) => {
+        box.textContent = currentBoxes[i].value;
+      });
+      const htmlText = '<!doctype html>
+' + clone.outerHTML;
+      const blob = new Blob([htmlText], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Yvette_Questions_Completed.html';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    document.querySelectorAll('textarea').forEach((box) => {
+      box.addEventListener('input', saveAnswers);
+    });
+    loadAnswers();
+  </script>
+</body>
+</html>
